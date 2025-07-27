@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | 255TZ</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-bMbnXZT86VLncruDPj9pVKMzh9byBOp4Hb8fqA8uNx5WJmVI3HmOI4iyPzcjha3k91sn4Q0RcZkJi473Gd8j6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Shared Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link  
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: var(--colour-bg);">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Navigation -->
+    <header id="header">
+      <nav class="navbar navbar-expand-md navbar-dark" style="background:var(--colour-bg);">
+        <div class="container">
+          <!-- 1) Brand first on all screens -->
+          <a
+            class="navbar-brand"
+            href="index.html"
+            aria-label="255TZ Home"
+          >
+            <img src="logo2.png" alt="255TZ Logo" style="height: 3rem;" />
+          </a>
+
+          <!-- 2) Toggler last on small screens, right-aligned -->
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- 3) Collapsible links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.html#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.html#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.html#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <style>
+        .navbar { background-color: var(--colour-bg); }
+        .nav-link { color: var(--colour-secondary) !important; }
+        .nav-link:hover { color: var(--colour-primary) !important; }
+      </style>
+    </header>
+
+    <!-- Page Hero -->
+    <section id="projects-hero" class="hero" style="height: 50vh;">
+      <div class="container hero-content">
+        <h1>Our Work</h1>
+        <p>
+          Discover some of the impactful digital products we've had the honour
+          to build and nurture.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Listing -->
+    <section class="projects">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="project-cards">
+          <!-- Wellness Within Hub -->
+          <div class="project-card">
+            <div>
+              <i class="fas fa-heartbeat card-icon"></i>
+              <h3>Wellness Within Hub</h3>
+              <p>
+                "Everyone deserves good mental health"—this youth‑led initiative
+                nurtures, protects and celebrates mental health across
+                Tanzania, equipping young people with tools, training and
+                community support.
+              </p>
+            </div>
+            <a href="https://wellnesswithinhub.org" class="btn portfolio" target="_blank" rel="noopener" style="background-color: var(--colour-primary); width: 100%;">Visit Site</a>
+          </div>
+          <!-- PlateAI -->
+          <div class="project-card">
+            <div>
+              <i class="fas fa-utensils card-icon"></i>
+              <h3>PlateAI</h3>
+              <p>
+                Personalized nutrition made easy. PlateAI advises what to eat
+                based on your body’s needs, using locally available foods in
+                Tanzania. It helps manage conditions like diabetes,
+                hypertension and obesity with tailored meal plans.
+              </p>
+            </div>
+            <a href="https://plateai.app" class="btn" target="_blank" rel="noopener" style="background-color: var(--colour-primary); width: 100%;">Visit Site</a>
+          </div>
+          <!-- MsosiHub -->
+          <div class="project-card">
+            <div>
+              <i class="fas fa-shopping-basket card-icon"></i>
+              <h3>MsosiHub</h3>
+              <p>
+                Export your personalised meal plan from PlateAI and order
+                planned meals with exact measurements and portions. MsosiHub
+                makes healthy eating simple and convenient.
+              </p>
+            </div>
+            <a href="https://msosi.plateai.app" class="btn" target="_blank" rel="noopener" style="background-color: var(--colour-primary); width: 100%;">Visit Site</a>
+          </div>
+          <!-- GBV Platform -->
+          <div class="project-card">
+            <div>
+              <i class="fas fa-hands-holding-heart card-icon"></i>
+              <h3>GBV Support Platform</h3>
+              <p>
+                Built in partnership with ZIPA Africa, this platform harnesses
+                data science to tackle gender‑based violence. ZIPA
+                specializes in zonal intelligence and predictive analytics to
+                transform African communities, empowering organisations
+                through data‑driven decision making.
+              </p>
+            </div>
+            <a href="https://gbv.zipa.africa" class="btn" target="_blank" rel="noopener" style="background-color: var(--colour-primary); width: 100%;">Visit Site</a>
+          </div>
+          <!-- Giftty -->
+          <div class="project-card">
+            <div>
+              <i class="fas fa-gift card-icon"></i>
+              <h3>Giftty</h3>
+              <p>
+                Giftty is a digital gifting platform enabling you to send
+                personalised e‑gift cards and surprises to friends and family.
+                Choose from curated experiences and make someone's day special.
+              </p>
+            </div>
+            <a href="https://giftty.me" class="btn" target="_blank" rel="noopener" style="background-color: var(--colour-primary); width: 100%;">Visit Site</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- About Us -->
+          <div class="footer-section">
+            <h4>
+              <!-- Logo -->
+              <a href="index.html">
+                <img src="logo2.png" alt="255TZ Logo" style="height: 3rem;" />
+              </a>
+            </h4>
+            <p>
+              We are a digital product studio and gig platform with over 10 years of
+              experience.
+            </p>
+            <!-- Socials -->
+            <div class="footer-social">
+              <a href="https://twitter.com/255tz.dev" class="social-link" target="_blank" rel="noopener">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://instagram.com/255tz.dev" class="social-link" target="_blank" rel="noopener">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://linkedin.com/company/255tz" class="social-link" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/255tz" class="social-link" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="index.html#about">About Us</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Resources & Gigs -->
+          <div class="footer-section">
+            <h4>Our Gigs</h4>
+            <ul class="footer-links">
+              <li><a href="https:wellnesswithinhub.org" target="_blank" rel="noopener">Wellness Within Hub</a></li>
+              <li><a href="https://plateai.app" target="_blank" rel="noopener">PlateAI</a></li>
+              <li><a href="https://msosi.plateai.app" target="_blank" rel="noopener">MsosiHub</a></li>
+              <li><a href="https://gbv.zipa.africa" target="_blank" rel="noopener">GBV Support</a></li>
+              <li><a href="https://giftty.me" target="_blank" rel="noopener">Giftty</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact & Support -->
+          <div class="footer-section">
+            <h4>Contact & Support</h4>
+            <p><strong>Address:</strong><br>
+              234TZ Corporation<br>
+              Plot 37, Bagamoyo Road<br>
+              Dar es Salaam, Tanzania
+            </p>
+            <p><strong>Phone:</strong><a href="tel:+255622387189">+255 622 387 189</a>
+            </p>
+            <p><strong>Email:</strong>
+              <a href="mailto:info@255tz.dev">info@255tz.dev</a>
+            </p>
+            <p><strong>Web:</strong>
+              <a href="https://255tz.dev" target="_blank" rel="noopener">255tz.dev</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 255TZ Dev Corporation. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Shared JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

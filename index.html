@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>255TZ Digital Solutions</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-bMbnXZT86VLncruDPj9pVKMzh9byBOp4Hb8fqA8uNx5WJmVI3HmOI4iyPzcjha3k91sn4Q0RcZkJi473Gd8j6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link  
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <body>
+    <!-- Navigation -->
+    <header id="header">
+      <nav class="navbar navbar-expand-md" style="background: var(--colour-bg);">
+        <div class="container">
+          <!-- 1) Brand first on all screens -->
+          <a
+            class="navbar-brand"
+            href="index.html"
+            aria-label="255TZ Home"
+          >
+            <img src="logo2.png" alt="255TZ Logo" style="height: 3rem;" />
+          </a>
+
+          <!-- 2) Toggler last on small screens, right-aligned -->
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- 3) Collapsible links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.html#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.html#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.html#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="container hero-content">
+        <h1>Transforming Ideas Into Reality</h1>
+        <p>
+          We build digital products—from simple prototypes to complex apps—to help
+          you thrive in a digital world.
+        </p>
+        <p class="subtitle">
+          Over 10 years of experience building meaningful digital solutions.
+        </p>
+        <a href="#contact" class="btn btn-primary">Request a Call Back</a>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+          <div class="card">
+            <img src="digital_product_16x9.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Digital Product Development</h5>
+              <p class="card-text">From concept to deployment, we create digital products and apps
+              that make a real difference.</p>
+              <a href="#contact" class="btn btn-primary">Request Quote</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="idea_to_reality_16x9.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Idea to Reality</h5>
+              <p class="card-text">Have an idea? We’ll guide you through the journey, turning your
+              vision into a functioning product.</p>
+              <a href="#contact" class="btn btn-primary">Request Quote</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="validation_strategy_16x9.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Validation &amp; Strategy</h5>
+              <p class="card-text">We don’t build just for the sake of building—our proven
+              validation process ensures your product solves real problems and
+              meets market needs.</p>
+              <a href="#contact" class="btn btn-primary">Request Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container about-content">
+        <div class="about-text">
+          <h2>About 255TZ.dev</h2>
+          <p>
+            <strong>255TZ.dev</strong> is a team of passionate digital creators. 
+            We serve clients around the globe, leveraging modern technologies and 
+            agile approaches to deliver products that inspire and empower. 
+            Our decade‑long journey has honed our ability to build software that is 
+            not only innovative but also solves real problems.
+          </p><br />
+          <p>
+            Our transdisciplinary approach encompasses UX, UI, strategy and
+            software engineering—ensuring your product has the polish and
+            performance needed to stand out. Whether you’re in Tanzania or
+            across the world, we’re here to turn your vision into reality.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container contact-content">
+
+        <h2>Get in Touch</h2>
+        <p>Ready to start your project? Request callback or send us a detailed inquiry via email.</p>
+
+        <div class="forms">
+          
+          <!-- Request a Call Back -->
+          <div class="form-card">
+            <h3>Request a Call Back</h3>
+            <form id="callback-form">
+              <div class="form-group">
+                <label for="cb-name">Name</label>
+                <input type="text" id="cb-name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="cb-phone">Phone Number</label>
+                <input type="tel" id="cb-phone" placeholder="Your Phone Number" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <div id="cb-response" class="form-response"></div>
+            </form>
+          </div>
+
+          <!-- Send an Inquiry -->
+          <div class="form-card">
+            <h3>Send an Inquiry</h3>
+            <form id="inquiry-form">
+              <div class="form-group">
+                <label for="inq-name">Name</label>
+                <input type="text" id="inq-name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="inq-email">Email Address</label>
+                <input type="email" id="inq-email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <label for="inq-message">Message</label>
+                <textarea id="inq-message" rows="5" placeholder="Tell us about your project or question" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <div id="inq-response" class="form-response"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <script>
+    // Autofill using localStorage
+    document.addEventListener('DOMContentLoaded', () => {
+      const fields = ['name', 'phone', 'email'];
+
+      fields.forEach(field => {
+        const cbInput = document.getElementById(`cb-${field}`);
+        const inqInput = document.getElementById(`inq-${field}`);
+        const value = localStorage.getItem(field);
+        if (value) {
+          if (cbInput) cbInput.value = value;
+          if (inqInput) inqInput.value = value;
+        }
+      });
+    });
+
+    // Handle Call Back form submission
+    document.getElementById('callback-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('cb-name').value.trim();
+      const phone = document.getElementById('cb-phone').value.trim();
+
+      if (!name || !phone) return;
+
+      localStorage.setItem('name', name);
+      localStorage.setItem('phone', phone);
+
+      const message = `Hi, I'm ${name}. Please call me back at ${phone}.`;
+      const encodedMsg = encodeURIComponent(message);
+      const whatsappURL = `https://wa.me/255622387189?text=${encodedMsg}`;
+      window.open(whatsappURL, '_blank');
+
+      document.getElementById('cb-response').innerText = 'Request sent via WhatsApp!';
+    });
+
+    // Handle Inquiry form submission
+    document.getElementById('inquiry-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('inq-name').value.trim();
+      const email = document.getElementById('inq-email').value.trim();
+      const message = document.getElementById('inq-message').value.trim();
+
+      if (!name || !email || !message) return;
+
+      localStorage.setItem('name', name);
+      localStorage.setItem('email', email);
+
+      const subject = encodeURIComponent('Project Inquiry from ' + name);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+      const mailtoURL = `mailto:info@255tzz.dev?subject=${subject}&body=${body}`;
+      window.location.href = mailtoURL;
+
+      document.getElementById('inq-response').innerText = 'Thanks, your email is being prepared!';
+    });
+    </script>
+
+    <footer id="contact" class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- About Us -->
+          <div class="footer-section">
+            <h4>
+              <!-- Logo -->
+              <a href="index.html">
+                <img src="logo2.png" alt="255TZ Logo" style="height: 3rem;" />
+              </a>
+            </h4>
+            <p>
+              We are a digital product studio and gig platform with over 10 years of
+              experience.
+            </p>
+            <!-- Socials -->
+            <div class="footer-social">
+              <a href="https://twitter.com/255tz.dev" class="social-link" target="_blank" rel="noopener">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://instagram.com/255tz.dev" class="social-link" target="_blank" rel="noopener">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://linkedin.com/company/255tz" class="social-link" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/255tz" class="social-link" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="index.html#about">About Us</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Resources & Gigs -->
+          <div class="footer-section">
+            <h4>Our Gigs</h4>
+            <ul class="footer-links">
+              <li><a href="https:wellnesswithinhub.org" target="_blank" rel="noopener">Wellness Within Hub</a></li>
+              <li><a href="https://plateai.app" target="_blank" rel="noopener">PlateAI</a></li>
+              <li><a href="https://msosi.plateai.app" target="_blank" rel="noopener">MsosiHub</a></li>
+              <li><a href="https://gbv.zipa.africa" target="_blank" rel="noopener">GBV Support</a></li>
+              <li><a href="https://giftty.me" target="_blank" rel="noopener">Giftty</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact & Support -->
+          <div class="footer-section">
+            <h4>Contact & Support</h4>
+            <p><strong>Address:</strong><br>
+              234TZ Corporation<br>
+              Plot 37, Bagamoyo Road<br>
+              Dar es Salaam, Tanzania
+            </p>
+            <p><strong>Phone:</strong><a href="tel:+255622387189">+255 622 387 189</a>
+            </p>
+            <p><strong>Email:</strong>
+              <a href="mailto:info@255tz.dev">info@255tz.dev</a>
+            </p>
+            <p><strong>Web:</strong>
+              <a href="https://255tz.dev" target="_blank" rel="noopener">255tz.dev</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 255TZ Dev Corporation. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Local JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

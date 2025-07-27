@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://255tz.dev/sitemap.xml

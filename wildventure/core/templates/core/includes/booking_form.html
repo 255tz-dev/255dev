@@ -1,0 +1,12 @@
+{% load crispy_forms_tags %}
+{% if booking_form %}
+  <form method="post" action="{% url 'bookings:new' %}">
+    {% csrf_token %}
+    {{ booking_form|crispy }}
+  </form>
+{% else %}
+  <form method="post" action="{% url 'bookings:new' %}">
+    {% csrf_token %}
+    {{ form|crispy }}
+  </form>
+{% endif %}

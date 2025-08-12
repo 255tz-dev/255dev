@@ -1,0 +1,10 @@
+h1, h2, h3, .navbar-brand {
+  font-family: 'Architects Daughter', cursive;
+}
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+}
+.badge.text-bg-warning {
+  color: #1f1f1f;
+}

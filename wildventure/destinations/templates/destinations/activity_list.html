@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans 'Experiences' %}{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <h1 style="font-family: 'Architects Daughter', cursive;">{% trans 'Experiences' %}</h1>
+  <ul class="list-group">
+    {% for activity in activities %}
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>{{ activity.name }}</span>
+      </li>
+    {% empty %}
+      <li class="list-group-item">{% trans 'No experiences available.' %}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

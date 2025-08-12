@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans 'Destinations' %}{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <h1 style="font-family: 'Architects Daughter', cursive;">{% trans 'Destinations' %}</h1>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 mt-2">
+    {% for destination in destinations %}
+    <div class="col">
+      <div class="card h-100">
+        {% if destination.image %}
+          <img src="{{ destination.image.url }}" class="card-img-top" alt="{{ destination }}">
+        {% else %}
+          <img src="https://placehold.co/600x400" class="card-img-top" alt="{{ destination }}">
+        {% endif %}
+        <div class="card-body">
+          <h5 class="card-title">{{ destination.name }}</h5>
+        </div>
+        <div class="card-footer">
+          <a class="btn btn-outline-primary btn-sm" href="{{ destination.get_absolute_url }}">{% trans 'View details' %}</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

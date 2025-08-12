@@ -1,0 +1,74 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+
+{% block title %}{{ package.name }} | {% trans 'Package' %}{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <div class="row g-4">
+    <div class="col-12 col-lg-8">
+      <h1 style="font-family: 'Architects Daughter', cursive;">{{ package.name }}</h1>
+      {% if package.image %}
+        <img class="img-fluid rounded mb-3" src="{{ package.image.url }}" alt="{{ package }}">
+      {% endif %}
+      <div class="mb-4">
+        <h5>{% trans 'Summary' %}</h5>
+        <div class="text-body">{{ package.summary|linebreaks }}</div>
+      </div>
+      <div class="mb-4">
+        <h5>{% trans 'Detailed Itinerary' %}</h5>
+        <div class="text-body">{{ package.description|linebreaks }}</div>
+      </div>
+      <div class="mb-4">
+        {% for item in package.itinerary_items.all %}
+          <div class="card mb-3">
+            <div class="card-body">
+              <h6 class="card-title">{% trans 'Itinerary' %} {{ item.day_number }}: {{ item.title }}</h6>
+              <div class="card-text">{{ item.description|linebreaks }}</div>
+              {% if item.image %}
+                <img class="img-fluid rounded mt-2" src="{{ item.image.url }}" alt="{{ item.title }}">
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="mb-4">
+        <h5>{% trans 'Price Includes' %}</h5>
+        <ul>
+          <li>{% trans 'Arrival and departure transfers' %}</li>
+          <li>{% trans 'Transport per itinerary' %}</li>
+          <li>{% trans 'Accommodation per itinerary' %}</li>
+          <li>{% trans 'Meals per itinerary' %}</li>
+          <li>{% trans 'Entry fees' %}</li>
+          <li>{% trans 'Government taxes' %}</li>
+        </ul>
+      </div>
+      <div class="mb-4">
+        <h5>{% trans 'Price Excludes' %}</h5>
+        <ul>
+          <li>{% trans 'International and domestic flights' %}</li>
+          <li>{% trans 'Visa related costs' %}</li>
+          <li>{% trans 'Travel insurance' %}</li>
+          <li>{% trans 'Personal expenses (beverage, laundry, telephone, etc.)' %}</li>
+          <li>{% trans 'Tips and souvenirs' %}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="h4 mb-0">${{ package.price_usd }}</span>
+            <span class="badge text-bg-primary">{{ package.days }} {% trans 'days' %}</span>
+          </div>
+          <a href="{% url 'bookings:new' %}" class="btn btn-primary w-100">{% trans 'Book This Tour' %}</a>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h6 class="mb-2">{% trans 'Have questions?' %}</h6>
+        <p class="small text-muted">{% trans 'Contact us via email or WhatsApp from the top bar.' %}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans 'Thank You' %}{% endblock %}
+
+{% block content %}
+<div class="container py-5 text-center">
+  <h1 style="font-family: 'Architects Daughter', cursive;">{% trans 'Thank you!' %}</h1>
+  <p class="lead">{% trans 'We have received your booking request and will contact you shortly.' %}</p>
+  <a href="/" class="btn btn-primary">{% trans 'Back to Home' %}</a>
+</div>
+{% endblock %}
